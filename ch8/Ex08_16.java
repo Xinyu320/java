@@ -6,7 +6,7 @@ class CSphere {
     private int z;
     private int radius;
 
-    // 构造函数
+    // 構造函数
     public CSphere() {
         // 默认构造一个半径为1的球，位置为(0, 0, 0)
         x = 0;
@@ -15,29 +15,29 @@ class CSphere {
         radius = 1;
     }
 
-    // 设置圆心位置的函数
+    // 設置圆心位置的函数
     public void setLocation(int newX, int newY, int newZ) {
         x = newX;
         y = newY;
         z = newZ;
     }
 
-    // 设置半径的函数
+    // 設置半徑的函数
     public void setRadius(int newRadius) {
         radius = newRadius;
     }
 
-    // 计算球的表面积
+    // 計算球的表面積
     public double surfaceArea() {
         return 4 * Math.PI * Math.pow(radius, 2);
     }
 
-    // 计算球的体积
+    // 計算球的體積
     public double volume() {
         return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
     }
 
-    // 显示圆心座标的函数
+    // 顯示圆心座標的函数
     public void showCenter() {
         System.out.println("圓心座標：(" + x + ", " + y + ", " + z + ")");
     }
