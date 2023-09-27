@@ -24,13 +24,13 @@ class CWin {
         System.out.println("w=" + width + ", H=" + height);
     }
     
-    // 加入 setWindows 函數用于同时设置 width 和 height
+    // 加入 setWindows 函數用於同时設置 width 和 height
     void setWindows(int w, int h) {
         width = w;
         height = h;
     }
     
-    // 多載 setWindows 函數用于同时设置 width、height 和 name
+    // 多載 setWindows 函數用於同时設置 width、height 和 name
     void setWindows(int w, int h, String s) {
         width = w;
         height = h;
@@ -46,11 +46,11 @@ public class Ex08_12 {
         cw.setH(3);
         cw.show();
         
-        // 使用 setWindows 函數同时设置 width 和 height
+        // 使用 setWindows 函數同時設置 width 和 height
         cw.setWindows(8, 6);
         cw.show();
         
-        // 使用多載的 setWindows 函數同时设置 width、height 和 name
+        // 使用多載的 setWindows 函數同時設置 width、height 和 name
         cw.setWindows(10, 4, "New Window");
         cw.show();
     }
